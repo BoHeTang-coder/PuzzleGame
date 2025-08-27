@@ -1,0 +1,7 @@
+1.创建顶上菜单的时候，要注意先创建最大的JMenuBar，再创建JMenu，最后创建JMenuItem
+创建完成后依次添加上去，JMenuItem添加到 JMenu，JMenu添加到 JMenuBar，JMenuBar添加到 JFrame
+注意最后一步this.setJMenuBar(jMenuBar);
+2.设置图片的时候，记得取消布局管理器的默认居中，这样才能按照XY轴的坐标进行放置
+this.setLayout(null);
+3.记得先创建jLabel来管理ImageIcon
+4.添加图片的机械操作行为记得使用循环
